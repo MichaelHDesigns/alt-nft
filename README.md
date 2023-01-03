@@ -1,6 +1,6 @@
-# NFT marketplace
+# ALT NFT marketplace
 
-In this project,  I created an interactive NFT marketplace in React, Typescript & Solidity. Clients on this platform will be able to purchase NFTs with Ether digital currency.
+In this project,  I created an interactive ALT NFT marketplace in React, Typescript & Solidity. Clients on this platform will be able to purchase NFTs with ALT digital currency.
 The application is created in the Next JS framework, built on top of the React JS.
 ## Overview
 
