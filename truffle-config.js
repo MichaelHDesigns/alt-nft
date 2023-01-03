@@ -6,8 +6,8 @@ module.exports = {
   networks: {
     development: {
      host: "127.0.0.1", 
-     port: 7545,
-     network_id: "*",
+     port: 8545,
+     network_id: "*2330"
     },
     ropsten: {
       provider: () => 
@@ -15,8 +15,8 @@ module.exports = {
           keys.PRIVATE_KEY,
           keys.INFURA_ROPSTEN_URL
         ),
-      network_id: 3,
-      gas: 5500000,
+      network_id: 2330,
+      gas: 30000000,
       gasPrice: 20000000000,
       confirmations: 2,
       timeoutBlocks: 200,
