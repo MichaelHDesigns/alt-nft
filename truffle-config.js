@@ -7,7 +7,12 @@ module.exports = {
     development: {
      host: "127.0.0.1", 
      port: 8545,
-     network_id: "2330"
+     network_id: "2330",
+       provider: () => 
+        new HDWalletProvider(
+          keys.PRIVATE_KEY,
+          keys.INFURA_ROPSTEN_URL
+        ),
     },
     ropsten: {
       provider: () => 
