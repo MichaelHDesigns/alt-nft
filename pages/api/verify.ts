@@ -20,7 +20,7 @@ export default withSession(async (req: NextApiRequest & {session: Session}, res:
 
       await addressCheckMiddleware(req, res);
 
-      const jsonRes = await axios.post('https://api.pinata.cloud/pinning/pinJSONToIPFS', {
+      const jsonRes = await axios.post('https://ipfs.infura.io:5001', {
         pinataMetadata: {
           name: uuidv4(),
         },
