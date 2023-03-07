@@ -6,8 +6,8 @@ import { ethers } from "ethers";
 import * as util from "ethereumjs-util";
 
 const NETWORKS = {
-  "5777": "Ganache",
-  "3": "Ropsten"
+  "2330": "Ganache",
+  "2330": "Ropsten"
 }
 
 type NETWORK = typeof NETWORKS
@@ -31,7 +31,7 @@ export function withSession(handler: any) {
 
 const url = process.env.NODE_ENV === "production" ?
   process.env.INFURA_ROPSTEN_URL :
-  "http://127.0.0.1:7545";
+  "https://rpc0.altcoinchain.org/rpc";
 
 export const addressCheckMiddleware = async (req: NextApiRequest & {session: Session}, res: NextApiResponse) => {
   return new Promise(async (resolve, reject) => {
