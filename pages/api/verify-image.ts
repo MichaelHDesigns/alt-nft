@@ -33,7 +33,7 @@ export default withSession(async (
       }
     );
 
-    const fileRes = await axios.post("https://api.pinata.cloud/pinning/pinFileToIPFS", formData, {
+    const fileRes = await axios.post("https://ipfs.infura.io:5001", formData, {
       maxBodyLength: Infinity,
       headers: {
         'Content-Type': `multipart/form-data; boundary=${formData.getBoundary()}`,
